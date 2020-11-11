@@ -12,7 +12,7 @@ const ImgAngelsLogo = ({ className }) => {
       ) {
         id
         childImageSharp {
-          fixed(width: 103, height: 55) {
+          fixed(quality: 90, width: 103, height: 55) {
             ...GatsbyImageSharpFixed
           }
         }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
-import ImgMdhFavicon from '../../Images/img-mdh-favicon';
+import ImgAngelFavicon from '../../images/Logos/img-angels-favicon';
 
 const HeaderBlogPost = ({ className, hOne, author, date, timeToRead }) => {
   const data = useStaticQuery(graphql`
@@ -41,7 +41,7 @@ const HeaderBlogPost = ({ className, hOne, author, date, timeToRead }) => {
               {hOne}
             </h1>
             <div className="row justify-content-center text-white mt-3">
-              <ImgMdhFavicon className="mr-2 mt-1" />
+              <ImgAngelFavicon className="mr-2 mt-1" />
               <p className="drop-shadow-dark">
                 {author} • {date} • {timeToRead} min read
               </p>

@@ -13,7 +13,7 @@ module.exports = {
     title: `Angels Towing - Junk Car Mass`,
     description: `Angels Towing - Junk Car Mass`,
     author: `John Grattan`,
-    image: `src\components\images\Logos\img-angels-logo.js`,
+    image: `src/components/images/Logos/img-angels-logo.jsx`,
     siteUrl,
   },
   plugins: [
