@@ -1,6 +1,6 @@
 const {
   NODE_ENV,
-  URL: NETLIFY_SITE_URL = `https://wwww.mdhconstruction.com`,
+  URL: NETLIFY_SITE_URL = `https://letmeseemysite.com`,
   DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
   CONTEXT: NETLIFY_ENV = NODE_ENV,
 } = process.env;
@@ -10,10 +10,10 @@ const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
 module.exports = {
   pathPrefix: `/`,
   siteMetadata: {
-    title: `MDH Construction | Licensed General Contractor | Plymouth, MA`,
-    description: `MDH Construction is a licensed general contractor in Plymouth, MA, servicing gutters, insulation, decks, remodels, additions. Call today for your FREE estimate!`,
-    author: `MDH Construction`,
-    image: `https://www.mdhconstruction.com/static/800f75406d914563f0f442893d90d280/df308/mdh-construction-general-contractor-plymouth-ma-logo.png`,
+    title: `Angels Towing - Junk Car Mass`,
+    description: `Angels Towing - Junk Car Mass`,
+    author: `John Grattan`,
+    image: `src\components\images\Logos\img-angels-logo.js`,
     siteUrl,
   },
   plugins: [
@@ -26,18 +26,21 @@ module.exports = {
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-force-trailing-slashes`,
+    `gatsby-plugin-sitemap`,
+    // {
+    //   resolve: 'gatsby-plugin-google-tagmanager',
+    //   options: {
+    //     id: 'GTM-W8D3WTB',
+    //     includeInDevelopment: false,
+    //     defaultDataLayer: { platform: 'gatsby' },
+    //   },
+    // },
     {
-      resolve: 'gatsby-plugin-google-tagmanager',
+      resolve: 'gatsby-plugin-react-svg',
       options: {
-        id: 'GTM-W8D3WTB',
-        includeInDevelopment: false,
-        defaultDataLayer: { platform: 'gatsby' },
-      },
-    },
-    {
-      resolve: `gatsby-plugin-sitemap`,
-      options: {
-        exclude: [`/about/`, `/thank-you/`, `/privacy/`],
+        rule: {
+          include: /assets/,
+        },
       },
     },
     {
@@ -46,24 +49,25 @@ module.exports = {
         extensions: ['.mdx', '.md'],
       },
     },
-    {
-      resolve: `gatsby-plugin-breadcrumb`,
-      options: {
-        useAutoGen: true,
-        usePathPrefix: '/',
-        trailingSlashes: true,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-breadcrumb`,
+    //   options: {
+    //     useAutoGen: true,
+    //     usePathPrefix: '/',
+    //     trailingSlashes: true,
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://www.mdhconstruction.com',
-        sitemap: 'https://www.mdhconstruction.com/sitemap.xml',
+        host: 'https://junkcarsmass.com',
+        sitemap: 'https://junkcarsmass.com/sitemap.xml',
         resolveEnv: () => NETLIFY_ENV,
         env: {
           production: {
             policy: [
-              { userAgent: '*', disallow: ['/thank-you/', '/privacy/'] },
+              // REMOVE DISALLOW WHEN GOING LIVE
+              { userAgent: '*', disallow: ['/'] },
             ],
           },
           'branch-deploy': {
@@ -96,20 +100,20 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `mdh-construction-site`,
-        short_name: `mdh-construction-site`,
+        name: `junk-cars-mass`,
+        short_name: `junk-cars-mass`,
         start_url: `/`,
-        background_color: `#1a1b41`,
-        theme_color: `#baff29`,
+        background_color: `#fff`,
+        theme_color: `#fff`,
         display: `minimal-ui`,
-        icon: `src/images/favicon-mdh-construction.png`,
+        icon: `src/assets/logos/angels-towing-junk-car-mass-favicon.png`,
       },
     },
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Titillium+Web:400,300,300italic,400italic,700,700italic'],
+          families: ['Roboto:300;400;700;900', 'Oswald:300,400,500,600,700'],
         },
       },
     },

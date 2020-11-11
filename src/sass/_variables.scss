@@ -3,12 +3,13 @@
 // Color overrides
 
 // Set a custom color
-$green: #baff29 !default;
+$green: #20a000 !default;
 $teal: #62c6c3;
 $blueIce: #c2e7da;
 $greenFlower: #f1ffe7;
 $purple: #1a1b41 !default;
 $darkBlue: #011627;
+$light: #f8f9fa;
 $lightGray: #e8e8e8;
 $bronze: #b08d57;
 $silver: #aaa9ad;
@@ -16,17 +17,17 @@ $gold: #d4af37;
 $gray: #343a40;
 $darkGray: #212529;
 
-$primary: hsl(30, 100, 48) !default;
-$secondary: hsl(0, 0, 45) !default;
+$primary: #fff212 !default;
+$secondary: #003399 !default;
 
 // Site Header
 
-$headerBg: white;
+$headerBg: $gray;
 $imageOverlay: black;
 
 // Site Navigation
 
-$navLinkColor: $secondary;
+$navLinkColor: white;
 $navLinkActive: $primary;
 $navLinkHover: $primary;
 $navButtonColor: $primary;
@@ -45,14 +46,14 @@ $navBurgerBorder: none;
 
 // Banner
 
-$bannerH1Color: white;
-$bannerH2Color: #fff8dc;
+$heroMainTextColor: $primary;
+$heroSubTextColor: white;
 $pageBannerH1Color: #fff8dc;
 $pageBannerH2Color: white;
 
 // Main Content
 
-$pageBackground: hsl(36, 100, 96);
+$pageBackground: $light;
 $pageTextColor: hsl(0, 0, 23);
 $pageLinkColor: $primary;
 $h1Color: hsl(30, 100, 13);
@@ -80,13 +81,13 @@ $footerIconColor: $primary;
 
 $btnSolidBgColor: $primary;
 $btnSolidBgColorHover: $secondary;
-$btnSolidTextColor: white;
+$btnSolidTextColor: $secondary;
 $btnSolidTextColorHover: $primary;
-$btnSolidBorder: 2px white solid;
+$btnSolidBorder: 2px $secondary solid;
 $btnSolidBorderHover: 2px white solid;
 $btnSolidBorderRadius: 0.2em;
 $btnSolidFontSize: 1.1em;
-$btnSolidFontWeight: 700;
+$btnSolidFontWeight: 900;
 
 // Button Outline
 
@@ -98,12 +99,12 @@ $btnOutlineBorder: 2px $primary solid;
 $btnOutlineBorderHover: 2px white solid;
 $btnOutlineBorderRadius: 0.1em;
 $btnOutlineFontSize: 1.1em;
-$btnOutlineFontWeight: 700;
+$btnOutlineFontWeight: 00;
 
 // Font overrides
-$font-family-sans-serif: 'Titillium Web', -apple-system, BlinkMacSystemFont,
-  'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
-  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
+$font-family-sans-serif: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
 
 $font-family-serif: 'Merriweather', -apple-system, BlinkMacSystemFont,
   'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,

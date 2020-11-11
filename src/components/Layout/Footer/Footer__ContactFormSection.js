@@ -2,14 +2,14 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 import { Container, Row, Col } from 'react-bootstrap';
-import FormFooter from '../../FormFooter/FormFooter';
+import FormFooter from '../../common/Forms/FormFooter/FormFooter';
 
 const Footer__ContactFormSection = ({ className }) => {
   const data = useStaticQuery(graphql`
     query Footer__ContactFormSectionQ {
       footerContact: file(
         relativePath: {
-          eq: "images/new-house-roof-frame-mdh-construction-plymouth-ma.jpg"
+          eq: "assets/images/pages/footer/cash-for-junk-cars-angels-towing-junk-car-mass-junk-yard-plympton-ma.jpg"
         }
       ) {
         childImageSharp {
@@ -33,7 +33,7 @@ const Footer__ContactFormSection = ({ className }) => {
     >
       <Container>
         <Row className="justify-content-center">
-          <Col xs={12} md={8} className="px-0 my-5">
+          <Col xs={12} md={8} lg={6} className="px-0 my-5">
             <FormFooter />
           </Col>
         </Row>
