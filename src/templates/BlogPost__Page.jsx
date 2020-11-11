@@ -17,7 +17,7 @@ import {
 } from 'react-share';
 import SEO from '../components/common/SEO/seo';
 import PostHeader from '../components/views/Blog/PostHeader';
-import ImgAngelsLogo from '../components/Images/Logos/img-angels-logo';
+import ImgAngelsLogo from '../components/images/Logos/img-angels-logo';
 import ButtonInternalLink from '../components/common/Buttons/ButtonInternalLink/ButtonInternalLink';
 
 const BlogPostTemplate = ({ data }) => {

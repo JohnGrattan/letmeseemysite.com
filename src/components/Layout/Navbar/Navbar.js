@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Navbar, Nav, NavDropdown, Container, Row, Col } from 'react-bootstrap';
-import ImgAngelsLogo from '../../Images/Logos/img-angels-logo';
+import ImgAngelsLogo from '../../images/Logos/img-angels-logo';
 
 export default class Header extends React.Component {
   constructor(props) {

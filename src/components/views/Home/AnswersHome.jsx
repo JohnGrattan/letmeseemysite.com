@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
-import ImgCarLogos from '../../Images/Pages/Home/img-car-logos';
-import ImgCarModels from '../../Images/Pages/Home/img-car-models';
-import ImgCarCondition from '../../Images/Pages/Home/img-car-condition';
+import ImgCarLogos from '../../images/Pages/Home/img-car-logos';
+import ImgCarModels from '../../images/Pages/Home/img-car-models';
+import ImgCarCondition from '../../images/Pages/Home/img-car-condition';
 
 const AnswersHome = () => {
   return (
