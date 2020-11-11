@@ -64,9 +64,8 @@ const Blog__Section = ({ className }) => {
                 </Row>
                 <div className="text-center my-3">
                   <ButtonInternalLink
-                    btnlink={post.node.frontmatter.path}
-                    btnlabel="Read Blog Post"
-                    btn={true}
+                    btnLink={post.node.frontmatter.path}
+                    btnLabel="Read Blog Post"
                   />
                 </div>
               </div>

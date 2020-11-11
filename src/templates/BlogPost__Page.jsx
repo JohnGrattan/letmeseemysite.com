@@ -57,7 +57,7 @@ const BlogPostTemplate = ({ data }) => {
   }`;
 
   return (
-    <Layout>
+    <>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description}
@@ -178,15 +178,12 @@ const BlogPostTemplate = ({ data }) => {
               .
             </p>
             <div className="text-center mb-3 mt-4">
-              <ButtonInternalLink
-                btnLabel="Learn More"
-                btnLink="/who-we-are/"
-              />
+              <ButtonInternalLink btnLabel="Learn More" btnLink="/" />
             </div>
           </div>
         </Row>
       </Container>
-    </Layout>
+    </>
   );
 };
 
