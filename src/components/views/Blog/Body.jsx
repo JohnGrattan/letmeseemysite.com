@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Row, Col } from 'react-bootstrap';
-import Section from '../Blog/Section';
+import Section from './Section';
 
 const Body = ({ className }) => {
   return (

@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import { Col, Container, Table } from 'react-bootstrap';
 import SEO from '../components/common/SEO/seo';
-import Header from '../components/layout/Header/Header';
+import Header from '../components/layouts/Header/Header';
 
 const PrivacyPage = ({ pageContext, location }) => {
   const data = useStaticQuery(graphql`

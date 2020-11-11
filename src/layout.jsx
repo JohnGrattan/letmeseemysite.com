@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Navbar from './components/layout/Navbar/Navbar';
-import Footer from './components/layout/Footer/Footer';
+import Navbar from './components/layouts/Navbar/Navbar';
+import Footer from './components/layouts/Footer/Footer';
 import './layout.scss';
 
 const getScrollNode = (element) => {
