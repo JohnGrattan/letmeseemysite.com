@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import SEO from '../components/common/SEO/seo';
-import Header from '../components/layout/Header/Header';
+import Header from '../components/layouts/Header/Header';
 import Body from '../components/views/Blog/Body';
 
 const BlogPage = ({ pageContext, location }) => {
