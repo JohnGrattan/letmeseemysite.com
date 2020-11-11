@@ -8,20 +8,6 @@
 [[plugins]]
   package = "netlify-plugin-gatsby-cache"
 
-# Redirects About page to Who We Are page
-[[redirects]]
-    from = "https://www.mdhconstruction.com/about"
-    to = "https://www.mdhconstruction.com/who-we-are/"
-    status = 301
-    force = true
-
-# Redirects Login page to Home
-[[redirects]]
-    from = "https://www.mdhconstruction.com/login"
-    to = "https://www.mdhconstruction.com"
-    status = 301
-    force = true
-
 # Asset optimization
 [build.processing]
   skip_processing = false
