@@ -49,12 +49,21 @@ const Footer = () => {
                 </a>
               </Container>
               <Container className="px-0 text-sans-serif pt-2 d-flex mb-2">
+                <a href="tel:+16179976510">
+                  <i className="fas fa-phone mt-1" />
+                </a>
+
+                <a className="ml-3" href="tel:+16179976510">
+                  Cell: (617) 997-6510
+                </a>
+              </Container>
+              <Container className="px-0 text-sans-serif pt-2 d-flex mb-2">
                 <a href="tel:+17819363974">
                   <i className="fas fa-phone mt-1" />
                 </a>
 
                 <a className="ml-3" href="tel:+17819363974">
-                  (781) 936-3974
+                  Office: (781) 936-3974
                 </a>
               </Container>
               <Container className="px-0 text-sans-serif pt-2 d-flex mb-2">

@@ -39,8 +39,11 @@ const HeroHome = ({ className }) => {
               We pay cash for junk cars
             </h1>
             <p className="px-sm-5 p-3 mb-3 mb-lg-0 drop-shadow-darker font-weight-bold">
-              Call <span className="text-primary">(781) 205-0483</span> to
-              schedule a pickup with Angels Towing - Junk Car Mass
+              Call{' '}
+              <a href="tel:+16179976510" className="text-primary">
+                (617) 997-6510
+              </a>{' '}
+              to schedule a same day pickup. We are available 24/7!
             </p>
           </Col>
           <Col xs={12} md={8} lg={4}>

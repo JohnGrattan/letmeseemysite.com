@@ -6,13 +6,8 @@ const ButtonExternalLink = ({ btnLink, btnLabel, btnSolid }) => {
   const outline = 'btn btn-outline-light btn-xl-outline drop-shadow-dark';
 
   return (
-    <a
-      rel="nofollow"
-      target="_blank"
-      href={btnLink}
-      className={btnSolid ? solid : outline}
-    >
-      <span className="drop-shadow">{btnLabel}</span>
+    <a href={btnLink} className={btnSolid ? solid : outline}>
+      <span>{btnLabel}</span>
     </a>
   );
 };
