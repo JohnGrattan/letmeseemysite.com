@@ -12,8 +12,8 @@ module.exports = {
   siteMetadata: {
     title: `Angels Towing - Junk Car Mass`,
     description: `Angels Towing - Junk Car Mass`,
-    author: `John Grattan`,
-    image: `src/components/images/Logos/img-angels-logo.jsx`,
+    author: `Flaviano Angel`,
+    image: `https://junkcarsmass.com#image`,
     siteUrl,
   },
   plugins: [

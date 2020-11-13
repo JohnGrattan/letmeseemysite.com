@@ -39,14 +39,14 @@ const BlogPostTemplate = ({ data }) => {
       "name": "${post.frontmatter.author}"
     },
     "datePublished": "${post.frontmatter.date}",
-    "image": "https://www.mdhconstruction.com/",
+    "image": "https://junkcarsmass.com/",
     "url": "${post.frontmatter.url}",
     "publisher": {
       "@type": "Organization",
-      "name": "MDH Construction",
+      "name": "Angels Towing - Junk Car Mass",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.mdhconstruction.com/static/800f75406d914563f0f442893d90d280/df308/mdh-construction-general-contractor-plymouth-ma-logo.png"
+        "url": "https://junkcarsmass.com/#image"
       }
     },
     "headline" : "${post.frontmatter.title}",
@@ -159,21 +159,14 @@ const BlogPostTemplate = ({ data }) => {
             </div>
             <hr className="light" />
             <p className="text-left text-dark">
-              Michael Maher is the owner of MDH Construction and currently
-              resides in Plymouth, MA.
+              Flaviano Angel is the owner of Angels Towing - Junk Car Mass and
+              currently resides in Plympton, MA.
             </p>
+
             <p className="text-left text-dark">
-              He is a licensed home improvement contractor and construction
-              supervisor.
-            </p>
-            <p className="text-left text-dark">
-              Michael specializes in home remodeling, seamless gutter
-              installations, and home insulation projects.
-            </p>
-            <p className="text-left text-dark">
-              If you are interested in speaking with Michael, please call{' '}
-              <a className="" href="tel:+17742696002">
-                (774) 269-6002
+              If you are interested in speaking with Angel, please call{' '}
+              <a className="" href="tel:+17819363974">
+                (781) 936-3974
               </a>
               .
             </p>

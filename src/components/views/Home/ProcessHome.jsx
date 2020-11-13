@@ -46,19 +46,18 @@ const ProcessHome = () => {
             </Container>
             <Container className="bg-white p-3">
               <p>
-                <strong className="text-dark">Contact Us Today</strong>
+                <strong className="text-dark">Available 24/7</strong>
               </p>
               <p className="text-dark">
-                Complete our form and we'll contact you to discuss your vehicle
-                and reach an agreement. If you’d prefer, you can also contact us
-                by phone at{' '}
+                Call us today at{' '}
                 <a
-                  className="font-weight-bold text-secondary"
-                  href="tel:+17819363974"
+                  href="tel:+16179976510"
+                  className="text-secondary font-weight-bold"
                 >
-                  (781) 936-3974
-                </a>
-                .
+                  (617) 997-6510
+                </a>{' '}
+                to discuss your vehicle and reach an agreement. If you’d prefer,
+                complete our contact form below.
               </p>
             </Container>
           </Col>

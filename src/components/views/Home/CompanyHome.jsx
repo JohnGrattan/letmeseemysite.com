@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Table } from 'react-bootstrap';
 
 import ImgTowTruck from '../../images/Pages/Home/img-tow-truck';
-import ButtonInternalLink from '../../common/Buttons/ButtonInternalLink/ButtonInternalLink';
+import ButtonExternalLink from '../../common/Buttons/ButtonExternalLink/ButtonExternalLink';
 import IconCashPayments from '../../../assets/svg/big-cash-payments-junk-cars-angels-auto-towing.svg';
 import IconTowTruck from '../../../assets/svg/same-day-pick-up-angels-auto-towing-boston-ma.svg';
 import IconExperience from '../../../assets/svg/experience-professional-angels-auto-towing-plympton-ma.svg';
@@ -74,7 +74,10 @@ const CompanyHome = () => {
               Let's build a clean and sustainable environment together!
             </p>
             <Container className="mt-5 mx-0 px-0">
-              <ButtonInternalLink btnLabel="Contact Us" btnLink="/" />
+              <ButtonExternalLink
+                btnLabel="Call Us Today"
+                btnLink="tel:+16179976510"
+              />
             </Container>
           </Col>
         </Row>

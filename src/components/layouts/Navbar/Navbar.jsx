@@ -26,13 +26,16 @@ export default class Header extends React.Component {
           expand="lg"
           collapseOnSelect={true}
         >
-          <Container className="align-content-center">
+          <Container fluid className="align-content-center">
             <Link
               to="/"
               className="svg-size-logo js-scroll-trigger text-secondary text-uppercase align-content-center pointer"
             >
               <ImgAngelsLogo />
             </Link>
+            <span className="lead font-weight-bold text-white d-none d-lg-flex">
+              ⭐ SAME DAY PICK UP 24/7 ⭐
+            </span>
             <Navbar.Toggle
               aria-label="Toggle navigation"
               aria-controls="navbarResponsive"
@@ -45,21 +48,37 @@ export default class Header extends React.Component {
               <Nav className="navbar-nav ml-auto mt-2 my-lg-0 ">
                 {/* Desktop Menu */}
                 <li className="nav-item my-dropdown d-none d-lg-inline nav-li-m-top">
-                  <Link className="nav-link text-uppercase" to="/who-we-are/">
-                    <i className="fas fa-phone mr-2 text-primary"></i>(781)
-                    936-3974
-                  </Link>
+                  <a
+                    className="nav-link text-uppercase"
+                    href="tel:+16179976510"
+                  >
+                    <i className="fas fa-phone mr-2 text-primary"></i>
+                    <span className="text-primary">Cell:</span> (617) 997-6510
+                  </a>
                 </li>
                 <li className="nav-item my-dropdown d-none d-lg-inline nav-li-m-top">
-                  <Link className="nav-link text-uppercase" to="/who-we-are/">
+                  <a
+                    className="nav-link text-uppercase"
+                    href="tel:+17819363974"
+                  >
+                    <i className="fas fa-phone mr-2 text-primary"></i>
+                    <span className="text-primary">Office:</span> (781) 936-3974
+                  </a>
+                </li>
+                <li className="nav-item my-dropdown d-none d-lg-inline nav-li-m-top">
+                  <a
+                    className="nav-link text-uppercase"
+                    href="https://goo.gl/maps/MZFJ1hR87hQpDgK16"
+                    target="_blank"
+                  >
                     <i className="fas fa-map-marker-alt mr-2 text-primary"></i>
                     87 County Rd, Plympton, MA 02367
-                  </Link>
+                  </a>
                 </li>
                 <li className="nav-item my-auto d-none d-lg-inline">
                   <a
                     className="btn-nav nav-link text-uppercase py-2 ml-4 drop-shadow pointer"
-                    href="tel:+17819363974"
+                    href="tel:+16179976510"
                   >
                     Call Us
                   </a>
@@ -80,78 +99,11 @@ export default class Header extends React.Component {
                     </Container>
                   </li>
                 </Link>
-                {/* <Link to="/who-we-are/">
-                  <li className="nav-item mx-3 d-lg-none">
-                    <Container className="bg-secondary border-menu-item">
-                      <div className="d-flex">
-                        <i className="fas fa-address-card mt-3 mr-3 text-white"></i>
-                        <span className="nav-button text-uppercase drop-shadow">
-                          About
-                        </span>
-                      </div>
-                    </Container>
-                  </li>
-                </Link>
-                <Link to="/services/">
-                  <li className="nav-item mx-3 d-lg-none">
-                    <Container className="bg-secondary border-menu-item">
-                      <div className="d-flex">
-                        <i className="fas fa-tools mt-3 mr-3 text-white"></i>
-                        <span className="nav-button text-uppercase drop-shadow">
-                          Services
-                        </span>
-                      </div>
-                    </Container>
-                  </li>
-                </Link>
-                <Link to="/gallery/">
-                  <li className="nav-item mx-3 d-lg-none">
-                    <Container className="bg-secondary border-menu-item">
-                      <div className="d-flex">
-                        <i className="fas fa-camera mt-3 mr-3 text-white"></i>
-                        <span className="nav-button text-uppercase drop-shadow">
-                          Gallery
-                        </span>
-                      </div>
-                    </Container>
-                  </li>
-                </Link>
-                <Link to="/testimonials/">
-                  <li className="nav-item mx-3 d-lg-none">
-                    <Container className="bg-secondary border-menu-item">
-                      <div className="d-flex">
-                        <i className="fas fa-medal mt-3 mr-3 text-white"></i>
-                        <span className="nav-button text-uppercase drop-shadow">
-                          Testimonials
-                        </span>
-                      </div>
-                    </Container>
-                  </li>
-                </Link>
-                <Link to="/employment/">
-                  <li className="nav-item mx-3 d-lg-none">
-                    <Container className="bg-secondary border-menu-item">
-                      <div className="d-flex">
-                        <i className="fas fa-hard-hat mt-3 mr-3 text-white"></i>
-                        <span className="nav-button text-uppercase drop-shadow">
-                          Employment
-                        </span>
-                      </div>
-                    </Container>
-                  </li>
-                </Link>
-                <Link to="/blog/">
-                  <li className="nav-item mx-3 d-lg-none">
-                    <Container className="bg-secondary border-menu-item">
-                      <div className="d-flex">
-                        <i className="fas fa-pencil-alt mt-3 mr-3 text-white"></i>
-                        <span className="nav-button text-uppercase drop-shadow">
-                          Blog
-                        </span>
-                      </div>
-                    </Container>
-                  </li>
-                </Link> */}
+                {/* <Container className="bg-primary text-center">
+                  <p className="text-secondary font-weight-bold">
+                    Contact us today
+                  </p>
+                </Container> */}
                 <Link to="/contact-us/">
                   <li className="nav-item mx-3 d-lg-none">
                     <Row>
@@ -161,9 +113,15 @@ export default class Header extends React.Component {
                           className="py-3 bg-primary container justify-content-center align-items-center border-menu-contact"
                         >
                           <span className="nav-button text-uppercase text-white">
-                            <span className="drop-shadow mobile-menu-contact-text">
-                              Contact
-                            </span>
+                            <p className="mobile-menu-contact-text text-secondary mb-4">
+                              Call us to schedule a same day pick up
+                            </p>
+                            <p className="mobile-menu-contact-text text-secondary mb-4">
+                              We are available 24/7
+                            </p>
+                            <p className="mobile-menu-contact-text text-secondary">
+                              💵 Get CASH today! 💵
+                            </p>
                           </span>
                         </Col>
                       </Container>
@@ -179,7 +137,7 @@ export default class Header extends React.Component {
                       >
                         <a
                           className="nav-button text-uppercase drop-shadow-dark"
-                          href="tel:+17742696002"
+                          href="tel:+16179976510"
                         >
                           <i className="fas fa-phone mr-3 text-white"></i>Call
                         </a>
@@ -190,7 +148,7 @@ export default class Header extends React.Component {
                       >
                         <a
                           className="nav-button text-uppercase drop-shadow-dark"
-                          href="mailto:michael.maher@mdhconstruction.com?Subject=Important%20Email%20From%20Website"
+                          href="mailto:angelstowing@hotmail.com?Subject=Important%20Email%20From%20Website"
                           target="_blank"
                         >
                           <i className="fas fa-envelope mr-3 text-white"></i>
