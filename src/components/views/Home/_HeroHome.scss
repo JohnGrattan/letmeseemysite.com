@@ -12,8 +12,8 @@
   background-size: cover;
   opacity: 1 !important;
   h1 {
-    font-family: 'Oswald';
-    font-size: 2.5rem;
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 4rem;
     color: $heroMainTextColor;
     -webkit-text-stroke: 2px $secondary !important;
     margin-bottom: 5px;
@@ -21,7 +21,7 @@
     font-weight: 900 !important;
   }
   p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: $heroSubTextColor;
   }
 

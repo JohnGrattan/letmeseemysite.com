@@ -17,7 +17,7 @@ const AnswersHome = () => {
             <ImgCarLogos />
           </Col>
           <Col xs={12} lg={6} className="px-4 order-1 order-lg-1">
-            <h3 className="text-dark">We Buy Any Make</h3>
+            <h3 className="text-dark mt-5 mt-lg-0">We Buy Any Make</h3>
             <p className="lead">
               From major brands to foreign companies, we accept them all!
               Contact us today to find out how much your vehicle is worth and
@@ -38,7 +38,7 @@ const AnswersHome = () => {
             <ImgCarModels />
           </Col>
           <Col xs={12} lg={6} className="px-4 order-1 order-lg-0">
-            <h3 className="text-dark">We Buy Any Model</h3>
+            <h3 className="text-dark mt-5 mt-lg-0">We Buy Any Model</h3>
 
             <p className="lead">
               People always need scrap parts for older model vehicles, so don't
@@ -56,7 +56,7 @@ const AnswersHome = () => {
             <ImgCarCondition />
           </Col>
           <Col xs={12} lg={6} className="px-4 order-1 order-lg-1">
-            <h3 className="text-dark">We Buy Any Condition</h3>
+            <h3 className="text-dark mt-5 mt-lg-0">We Buy Any Condition</h3>
 
             <p className="lead">
               Totalled your car and can't get it to run? No problem, we'll send

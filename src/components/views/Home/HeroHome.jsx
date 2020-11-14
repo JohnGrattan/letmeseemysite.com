@@ -30,7 +30,7 @@ const HeroHome = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="John Grattan SEO & Web Design homepage background section - computer screen with SEO stats"
+      alt="Angels Towing - Junk Car Mass pays top dollar for junk car removal in Plymouth County, Massachusetts"
     >
       <Container id="home-banner-section" className="h-100">
         <Row className="h-100 align-items-center justify-content-center text-center">

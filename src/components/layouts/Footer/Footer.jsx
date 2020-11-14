@@ -84,8 +84,6 @@ const Footer = () => {
                   angelstowing
                   <wbr />
                   @hotmail.com
-                  <wbr />
-                  .com
                 </a>
               </Container>
               <Container className="px-0 text-sans-serif pt-2 d-flex mb-2">
@@ -169,23 +167,24 @@ const Footer = () => {
                 <a
                   className="my-auto"
                   href="https://www.facebook.com/ANGELSAUTOANDTOWING"
+                  target="_blank"
                 >
                   <span className="ml-1 my-auto">Facebook</span>
                 </a>
               </Container>
               <Container className="px-0 text-sans-serif d-flex py-2">
-                <a href="#" target="_blank" rel="nofollow">
+                <a href="#" target="_blank">
                   <i className="fab fa-2x fa-instagram mr-3" />
                 </a>
-                <a className="my-auto" href="#">
+                <a className="my-auto" href="#" target="_blank">
                   <span className="ml-2 my-auto">Instagram</span>
                 </a>
               </Container>
               <Container className="px-0 text-sans-serif d-flex py-2">
-                <a href="#" target="_blank" rel="nofollow">
+                <a href="#" target="_blank">
                   <i className="fab fa-2x fa-youtube mr-3" />
                 </a>
-                <a className="my-auto" href="#">
+                <a className="my-auto" href="#" target="_blank">
                   <span className="my-auto">YouTube</span>
                 </a>
               </Container>
@@ -200,8 +199,8 @@ const Footer = () => {
                   Copyright &copy; {new Date().getFullYear()}{' '}
                   <Link className="text-primary font-weight-bold" to="/">
                     Angels Towing - Junk Car Mass
-                  </Link>
-                  , Inc. All Rights Reserved
+                  </Link>{' '}
+                  All Rights Reserved
                 </p>
               </Col>
               <Col xs={12} md={12} className="small text-center">
