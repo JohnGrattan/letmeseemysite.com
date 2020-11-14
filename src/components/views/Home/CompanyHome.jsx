@@ -52,8 +52,8 @@ const CompanyHome = () => {
               </Table>
             </Container>
           </Col>
-          <Col xs={12} lg={6} className="px-4">
-            <p className="lead font-weight-bold">
+          <Col xs={12} lg={6} className="px-4 mt-5 mt-lg-0">
+            <p className="lead font-weight-bold font-italic">
               A TRUSTED FAMILY OWNED BUSINESS
             </p>
             <h2 className="font-weight-bold text-secondary mb-4 text-left">
@@ -73,7 +73,7 @@ const CompanyHome = () => {
               green and create many lasting benefits throughout your community.
               Let's build a clean and sustainable environment together!
             </p>
-            <Container className="mt-5 mx-0 px-0">
+            <Container className="mt-5 mx-0 px-0 text-center text-lg-left">
               <ButtonExternalLink
                 btnLabel="Call Us Today"
                 btnLink="tel:+16179976510"

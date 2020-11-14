@@ -10,7 +10,10 @@ const ReviewsHome = () => {
         <h2 className="display-4 font-weight-bold text-secondary mb-5 pb-5">
           #1 Junk Car Removal In Massachusetts
         </h2>
-        <Carousel interval={null} className="bg-dark rounded shadow-lg mx-lg-5">
+        <Carousel
+          interval={null}
+          className="bg-dark rounded shadow-lg mx-lg-5 px-3 px-lg-0"
+        >
           <Carousel.Item>
             <Row>
               <Col xs={12} lg={8} className="text-light mx-auto p-5">
